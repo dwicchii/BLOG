@@ -256,6 +256,8 @@ body {
 }
 
 .landscape-image.profile {
+    background: url('miyabi.jpg') no-repeat center center;
+    background-size: cover;
     width: 150px;
     height: 150px;
     border-radius: 50%;
