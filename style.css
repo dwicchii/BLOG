@@ -36,12 +36,12 @@ body {
 .home-icon {
     background-color: white;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -149,11 +149,18 @@ body {
 
 .image-item {
     flex: 1;
-    background: rgb(255, 255, 255);
+    top: auto;
+    background: rgb(249, 249, 249);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    margin-bottom: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .image-item:hover {
@@ -179,12 +186,12 @@ body {
 
 .home-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
     background-color: white;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,14 +201,14 @@ body {
 
 .home-button a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .profil-card {
     background: white;
     border-radius: 20px;
     padding: 40px;
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -229,7 +236,7 @@ body {
 
 .profile-info {
     text-align: left;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -264,10 +271,37 @@ body {
     background: white;
     border-radius: 20px;
     padding: 0;
-    max-width: 1000px;
-    width: 800%;
+    max-width: 1300px;
+    width: 100%;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     overflow: hidden;
+}
+
+.maju-button{
+    position: center;
+    background-color: white;
+    
+    border-radius: 10%;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 10;
+    gap: 10px;
+}
+
+.maju-button a {
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.maju-button a:hover {
+    transform: scale(1.1);
+    color: #d1e7ff;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .penjelasan-header {
@@ -352,3 +386,4 @@ body {
         max-width: 300px;
     }
 }
+
