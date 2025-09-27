@@ -48,7 +48,7 @@ body {
 .logo-pfp {
     width: 50px;
     height: 50px;
-    background: url('miyabi.jpg') no-repeat center center;
+    background: url('z2.miyabi.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -187,11 +187,11 @@ body {
 .home-button {
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 20px;
     background-color: white;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,6 +202,13 @@ body {
 .home-button a {
     text-decoration: none;
     font-size: 30px;
+}
+
+.home-button a:hover {
+    transform: scale(1.1);
+    color: #ff0000;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .profil-card {
@@ -227,7 +234,7 @@ body {
 }
 
 .landscape-image.profile {
-    background: url('miyabi.jpg') no-repeat center center;
+    background: url('z2.miyabi.jpg') no-repeat center center;
     background-size: cover;
     width: 200px;
     height: 200px;
@@ -278,11 +285,12 @@ body {
 }
 
 .maju-button{
-    position: center;
+    position: absolute;
+    top: 30px;
+    right: 80px;
     background-color: white;
-    
     border-radius: 10%;
-    width: 100px;
+    width: 90px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -294,18 +302,42 @@ body {
 
 .maju-button a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .maju-button a:hover {
     transform: scale(1.1);
-    color: #d1e7ff;
+    color: #fe0000;
     text-decoration: none;
     transition: transform 0.3s, color 0.3s;
 }
 
-.penjelasan-header {
-    background-color: #1e5aa8;
+.header-merah {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header-kuning {
+    background-color: yellow;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header-hijau {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header-biru {
+    background-color: blue;
     color: white;
     padding: 20px;
     text-align: center;
@@ -328,11 +360,32 @@ body {
     justify-content: center;
 }
 
-.landscape-image.medium {
-    background: url('https://i.pinimg.com/736x/cc/95/97/cc9597a7f2f6e35a3d5c6e9c028a1e06.jpg') no-repeat center center;
+.landscape-z3.monyet {
+    background: url(z3.monyet.jpg) no-repeat center center;
     background-size: cover;
     width: 300px;
-    height: 180px;
+    height: 200px;
+}
+
+.landscape-z4.monyet {
+    background: url(z4.monyet.jpg) no-repeat center center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.landscape-z5.monyet {
+    background: url(z5.monyet.jpg) no-repeat center center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.landscape-z6.monyet {
+    background: url(z6.monyet.jpg) no-repeat center center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
 }
 
 .penjelasan-text h3 {
