@@ -87,15 +87,9 @@ body {
     line-height: 1.2;
 }
 
-.probp-text:hover {
-    text-decoration: none;
-    color: #d1e7ff;
-    transform: scale(1.05);
-}
-
 .main-content {
     flex: 1;
-    padding: 20px 40px;
+    padding: 40px;
 }
 
 .header h1 {
@@ -107,7 +101,7 @@ body {
 
 .lars-image-container {
     width: 50%;
-    height: 350px;
+    height: 460px;
     position: relative;
     margin-bottom: 30px;
     border-radius: 8px;
@@ -121,10 +115,9 @@ body {
 
 .lers-image-container {
     width: 50%;
-    height: 350px;
+    height: 460px;
     position: relative;
     margin-bottom: 30px;
-    border-radius: 8px;
     padding: 10px;
     text-align: center;
     display: flex;
@@ -136,8 +129,9 @@ body {
 .landscape-image {
     width: 100%;
     height: 50%;
-    object-fit: cover;
-    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 300px;
 }
 
 .content-overlay {
@@ -162,21 +156,23 @@ body {
 .image-item {
     flex: 1;
     top: auto;
-    background: rgb(249, 249, 249);
-    border-radius: 8px;
+    background: rgb(255, 255, 255);
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    margin-top: auto;
     margin-bottom: auto;
     margin-right: 10px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .image-item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    transition: all 0.5s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 .image-link {
@@ -188,7 +184,10 @@ body {
 /* PROFIL PAGE STYLES */
 .profil-container {
     min-height: 100vh;
-    background-color: #1e5aa8;
+    background-image: url('https://i.pinimg.com/736x/d8/b1/74/d8b1745410db84dd4f7ee1484541ff08.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,6 +242,7 @@ body {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .landscape-image.profile {
@@ -251,6 +251,10 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    box-shadow: 0 4px 50px black;
+    border: 5px solid #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
 }
 
 .profile-info {
@@ -278,11 +282,13 @@ body {
 /* PENJELASAN PAGE STYLES */
 .penjelasan-container {
     min-height: 100vh;
-    background-color: #1e5aa8;
+    background-image: url('https://i.pinimg.com/1200x/5c/66/81/5c6681fc4a9df9eea53b90b756f29c26.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     padding: 20px;
 }
 
@@ -294,6 +300,7 @@ body {
     width: 100%;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .maju-button{
@@ -329,7 +336,6 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 0;
 }
 
 .header-kuning {
@@ -337,7 +343,6 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 0;
 }
 
 .header-hijau {
@@ -345,7 +350,6 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 0;
 }
 
 .header-biru {
@@ -353,21 +357,20 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 0;
 }
 
 .penjelasan-header h1 {
-    font-size: 28px;
+    font-size: 30px;
     margin: 0;
 }
 
 .penjelasan-content {
-    padding: 100px;
-    text-align: left;
+    padding: 30px;
+    text-align: justify;
 }
 
 .penjelasan-image {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
 }
@@ -401,17 +404,35 @@ body {
 }
 
 .penjelasan-text h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom:5px;
-    color: #333;
+    color: #000000;
 }
 
 .penjelasan-text p {
-    font-size: 14px;
+    font-size: 17px;
+    margin-top: 10px;
     line-height: 1.5;
-    color: #555;
-    margin-bottom: 15px;
+    color: #000000;
+    margin-bottom: 10px;
     text-align: justify;
+}
+
+.list-penjelasan-text {
+    padding: 15px;
+    text-align: justify;
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.tabel-contoh {
+    text-align: center;
+    font-size: 20px;
 }
 
 /* Responsive Design */

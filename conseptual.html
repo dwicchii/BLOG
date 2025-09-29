@@ -22,7 +22,7 @@
         <div class="penjelasan-card">
             <!-- Title -->
             <div class="header-biru">
-                <h1>Conseptual Model</h1>
+                <h1>Conseptual DB</h1>
             </div>
 
             <!-- Content Area -->
@@ -34,12 +34,37 @@
 
                 <!-- Text Content -->
                 <div class="penjelasan-text">
-                    <h3>AMONGUS LINGMABALL</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h2>Apa itu Conseptual DB?</h2>
+                    <p>Conseptual Database (Conceptual Schema/Conceptual Data Model) adalah representasi tingkat tinggi dari struktur data dan hubungan antar data dalam suatu sistem basis data. Model ini berfokus pada aspek logis dari data tanpa memperhatikan detail teknis implementasi. Tujuan utama dari model konseptual adalah untuk menyediakan gambaran yang jelas dan mudah dipahami tentang bagaimana data diorganisasi dan bagaimana entitas-entitas tersebut saling berinteraksi.</p>
+                    <p>Model konseptual biasanya digunakan pada tahap awal perancangan basis data untuk mengidentifikasi kebutuhan data dan hubungan antar entitas. Salah satu contoh paling umum dari model konseptual adalah Entity-Relationship Diagram (ERD), yang menggambarkan entitas, atribut, dan hubungan antar entitas dalam sistem.</p>
+                </div>
+
+                <h2>Komponen Utama Model Konseptual</h2>
+                <div class="list-penjelasan-text">
+                    <ul>
+                        <li>Entitas: Objek atau konsep yang memiliki keberadaan mandiri dalam sistem, seperti "Mahasiswa", "Dosen", atau "Mata Kuliah".</li>
+                        <li>Atribut: Karakteristik atau properti yang menggambarkan entitas, seperti "Nama", "NIM", atau "Alamat" untuk entitas "Mahasiswa".</li>
+                        <li>Hubungan: Asosiasi antara dua atau lebih entitas, seperti hubungan "Mengambil" antara entitas "Mahasiswa" dan "Mata Kuliah".</li>
+                    </ul>
+                </div>
+
+                <h2>Contoh Conseptual Database</h2>
+                <div class="list-penjelasan-text">
+                    <ol>
+                        <li>Entitas :</li>
+                        <ul class="margin-left">
+                            <li>Mahasiswa (Nama, nim, alamat)</li>
+                            <li>Dosen (Nama, nip, alamat)</li>
+                            <li>Mata Kuliah (Kode_MK, Nama_MK, SKS)</li>
+                            <li>KRS (ID_KRS, Semester, Tahun_ajaran)</li>
+                        </ul>
+                        <li>Hubungan :</li>
+                        <ul class="margin-left">
+                            <li>Mahasiswa → mengisi → KRS</li>
+                            <li>KRS → mencatat → Mata kuliah</li>
+                            <li>Dosen → mengajar → Mata kuliah</li>
+                        </ul>
+                    </ol>
                 </div>
             </div>
         </div>
