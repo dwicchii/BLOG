@@ -48,7 +48,7 @@ body {
 .logo-pfp {
     width: 50px;
     height: 50px;
-    background: url('z2.miyabi.jpg') no-repeat center center;
+    background: url('image/z2.miyabi.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -63,7 +63,7 @@ body {
 .logo-ubp {
     width: 50px;
     height: 50px;
-    background: url('ubp.png') no-repeat center center;
+    background: url('image/ubp.png') no-repeat center center;
     background-size: cover;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -129,6 +129,7 @@ body {
 .landscape-image {
     width: 100%;
     height: 50%;
+    object-fit: cover;
     background-size: cover;
     background-position: center;
     margin-bottom: 300px;
@@ -246,7 +247,7 @@ body {
 }
 
 .landscape-image.profile {
-    background: url('z2.miyabi.jpg') no-repeat center center;
+    background: url('image/z2.miyabi.jpg') no-repeat center center;
     background-size: cover;
     width: 200px;
     height: 200px;
@@ -331,29 +332,7 @@ body {
     transition: transform 0.3s, color 0.3s;
 }
 
-.header-merah {
-    background-color: red;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.header-kuning {
-    background-color: yellow;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.header-hijau {
-    background-color: green;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.header-biru {
-    background-color: blue;
+.header-kejelasan {
     color: white;
     padding: 20px;
     text-align: center;
@@ -370,42 +349,42 @@ body {
 }
 
 .penjelasan-image {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
 .landscape-z3.monyet {
-    background: url(z3.monyet.jpg) no-repeat center center;
+    background: url(image/z3.monyet.jpg) no-repeat center center;
     background-size: cover;
     width: 300px;
     height: 200px;
 }
 
 .landscape-z4.monyet {
-    background: url(z4.monyet.jpg) no-repeat center center;
+    background: url(image/z4.monyet.jpg) no-repeat center center;
     background-size: cover;
     width: 300px;
     height: 200px;
 }
 
 .landscape-z5.monyet {
-    background: url(z5.monyet.jpg) no-repeat center center;
+    background: url(image/z5.monyet.jpg) no-repeat center center;
     background-size: cover;
     width: 300px;
     height: 200px;
 }
 
 .landscape-z6.monyet {
-    background: url(z6.monyet.jpg) no-repeat center center;
+    background: url(image/z6.monyet.jpg) no-repeat center center;
     background-size: cover;
     width: 300px;
     height: 200px;
 }
 
-.penjelasan-text h3 {
-    font-size: 20px;
-    margin-bottom:5px;
+.penjelasan-text h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
     color: #000000;
 }
 
@@ -420,6 +399,7 @@ body {
 
 .list-penjelasan-text {
     padding: 15px;
+    margin-top: -5px;
     text-align: justify;
     color: #000000;
     font-size: 17px;
@@ -433,6 +413,17 @@ body {
 .tabel-contoh {
     text-align: center;
     font-size: 20px;
+}
+
+/* video */
+.video {
+    width: 90%;
+    height: 500px;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 /* Responsive Design */
