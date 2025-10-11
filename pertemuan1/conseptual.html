@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BASIS DATA - Conseptual Model</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="penjelasan-container">
         <!-- Home Button -->
         <div class="home-button">
-            <a href="index.html">⌂</a>
+            <a href="../index.html">⌂</a>
         </div>
 
                 <!-- Navigation Buttons -->
         <div class="maju-button" class="posisi-button">
-            <a href="basis data.html">←</a>
+            <a href="basisdata.html">←</a>
             <a href="physical.html">→</a>
         </div>
 
@@ -37,34 +37,32 @@
                     <h2>Apa itu Conseptual DB?</h2>
                     <p>Conseptual Database (Conceptual Schema/Conceptual Data Model) adalah representasi tingkat tinggi dari struktur data dan hubungan antar data dalam suatu sistem basis data. Model ini berfokus pada aspek logis dari data tanpa memperhatikan detail teknis implementasi. Tujuan utama dari model konseptual adalah untuk menyediakan gambaran yang jelas dan mudah dipahami tentang bagaimana data diorganisasi dan bagaimana entitas-entitas tersebut saling berinteraksi.</p>
                     <p>Model konseptual biasanya digunakan pada tahap awal perancangan basis data untuk mengidentifikasi kebutuhan data dan hubungan antar entitas. Salah satu contoh paling umum dari model konseptual adalah Entity-Relationship Diagram (ERD), yang menggambarkan entitas, atribut, dan hubungan antar entitas dalam sistem.</p>
-                </div>
-
-                <h2>Komponen Utama Model Konseptual</h2>
-                <div class="list-penjelasan-text">
-                    <ul>
-                        <li>Entitas: Objek atau konsep yang memiliki keberadaan mandiri dalam sistem, seperti "Mahasiswa", "Dosen", atau "Mata Kuliah".</li>
-                        <li>Atribut: Karakteristik atau properti yang menggambarkan entitas, seperti "Nama", "NIM", atau "Alamat" untuk entitas "Mahasiswa".</li>
-                        <li>Hubungan: Asosiasi antara dua atau lebih entitas, seperti hubungan "Mengambil" antara entitas "Mahasiswa" dan "Mata Kuliah".</li>
-                    </ul>
-                </div>
-
-                <h2>Contoh Conseptual Database</h2>
-                <div class="list-penjelasan-text">
-                    <ol>
-                        <li>Entitas :</li>
-                        <ul class="margin-left">
-                            <li>Mahasiswa (Nama, nim, alamat)</li>
-                            <li>Dosen (Nama, nip, alamat)</li>
-                            <li>Mata Kuliah (Kode_MK, Nama_MK, SKS)</li>
-                            <li>KRS (ID_KRS, Semester, Tahun_ajaran)</li>
-                        </ul>
-                        <li>Hubungan :</li>
-                        <ul class="margin-left">
-                            <li>Mahasiswa → mengisi → KRS</li>
-                            <li>KRS → mencatat → Mata kuliah</li>
-                            <li>Dosen → mengajar → Mata kuliah</li>
-                        </ul>
-                    </ol>
+                    <h2>Komponen Utama Model Konseptual</h2>
+                        <div class="list-penjelasan-text">
+                            <ul class="margin-left">
+                                <li>Entitas: Objek atau konsep yang memiliki keberadaan mandiri dalam sistem, seperti "Mahasiswa", "Dosen", atau "Mata Kuliah".</li>
+                                <li>Atribut: Karakteristik atau properti yang menggambarkan entitas, seperti "Nama", "NIM", atau "Alamat" untuk entitas "Mahasiswa".</li>
+                                <li>Hubungan: Asosiasi antara dua atau lebih entitas, seperti hubungan "Mengambil" antara entitas "Mahasiswa" dan "Mata Kuliah".</li>
+                            </ul>
+                        </div>
+                    <h2>Contoh Conseptual Database</h2>
+                        <div class="list-penjelasan-text">
+                            <ol class="margin-left">
+                                <li>Entitas :</li>
+                                <ul class="margin-left">
+                                    <li>Mahasiswa (Nama, nim, alamat)</li>
+                                    <li>Dosen (Nama, nip, alamat)</li>
+                                    <li>Mata Kuliah (Kode_MK, Nama_MK, SKS)</li>
+                                    <li>KRS (ID_KRS, Semester, Tahun_ajaran)</li>
+                                </ul>
+                                <li>Hubungan :</li>
+                                <ul class="margin-left">
+                                    <li>Mahasiswa → mengisi → KRS</li>
+                                    <li>KRS → mencatat → Mata kuliah</li>
+                                    <li>Dosen → mengajar → Mata kuliah</li>
+                                </ul>
+                            </ol>
+                        </div>
                 </div>
             </div>
         </div>

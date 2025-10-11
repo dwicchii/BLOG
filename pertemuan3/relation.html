@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIS DATA - Basis Data</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="penjelasan-container">
+        <!-- Home Button -->
+        <div class="home-button">
+            <a href="../index.html">⌂</a>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="maju-button" class="posisi-button">
+            <a href="key.html">←</a>
+        </div>
+
+        <div class="penjelasan-card">
+            <!-- Title -->
+            <div style="background-color: rgb(0, 255, 55);" class="header-kejelasan">
+                <h1>Relation</h1>
+            </div>
+
+            <!-- Content Area -->
+            <div class="penjelasan-content">
+                <!-- Text Content -->
+                <div class="penjelasan-text">
+                    <h2>Relation</h2>
+                    <p>Relation atau Relasi adalah hubungan antara dua atau lebih entitas yang menggambarkan interaksi di antara mereka. Relasi menentukan bagaimana data saling terhubung dalam sistem basis data.</p>
+                </div>
+                <h3>Derajat Relasi</h3>
+                <div class="list-penjelasan-text">
+                    <ol>
+                        <li>Unary Relationship</li>
+                            <ul class="margin-left">
+                                <li>Relasi dari entitas ke dirinya sendiri.</li>
+                                <li>Contoh: Pegawai membawahi Pegawai lain.</li>
+                            </ul>
+                        <li>Binary Relationship</li>
+                            <ul class="margin-left">
+                                <li>Relasi antara dua entitas. (paling umum)</li>
+                                <li>Contoh: Mahasiswa mengambil Mata Kuliah.</li>
+                            </ul>
+                        <li>Ternary Relationship</li>
+                            <ul class="margin-left">
+                                <li>Relasi antara tiga entitas.</li>
+                                <li>Contoh: Dokter menangani Pasien dengan Obat.</li>
+                            </ul>
+                    </ol>
+                </div>
+                <h3>Kardinalitas</h3>
+                <div class="list-penjelasan-text">
+                    <ul>
+                        <li>Menunjukkan jumlah keterhubungan antar entitas dalam relasi.</li>
+                        <li>Contoh kardinalitas:
+                            <ul class="margin-left">
+                                <li>One to One (1:1): Satu entitas A hanya berhubungan dengan satu entitas B.</li>
+                                <li>One to Many (1:N): Satu entitas A dapat berhubungan dengan banyak entitas B.</li>
+                                <li>Many to Many (M:N): Banyak entitas A dapat berhubungan dengan banyak entitas B.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="penjelasan-text">
+                <h2>Kenapa Many-to-Many (M:N) tidak baik digunakan langsung di ERD</h2>
+                <p>Hubungan many-to-many berarti satu entitas bisa berhubungan dengan banyak entitas lain dan sebaliknya.</p>
+                <h3>Contoh</h3>
+                    <ul class="margin-left">
+                        <li>Satu Mahasiswa bisa mengambil banyak MataKuliah</li>
+                        <li>Satu MataKuliah bisa diambil banyak Mahasiswa</li>
+                    </ul>
+                <p>Masalahnya: Relasi M:N tidak bisa diimplementasikan langsung dalam tabel relasional.<br>Database relasional (seperti MySQL, PostgreSQL, dsb) tidak mendukung relasi M:N tanpa perantara, karena:</p>
+                    <ol class="margin-left">
+                        <li>Tidak ada cara efisien untuk menyimpan pasangan data ganda tanpa tabel tambahan.</li>
+                        <li>Redundansi dan inkonsistensi data meningkat jika dipaksakan.</li>
+                        <li>Kesulitan dalam query dan referential integrity (foreign key tidak bisa menunjuk ke banyak nilai sekaligus).</li>
+                    </ol><br>
+                <h3>Alternatif Relation Many-to-Many</h3>
+                <p>Sebagai alternatif, dalam desain database, Anda dapat mempertimbangkan penggunaan relasi One to Many (1:N) dengan tabel penghubung (junction table) untuk menggambarkan hubungan banyak-ke-banyak. Hal ini dapat mengatasi beberapa masalah kompleksitas, kinerja, dan ketidakjelasan yang terkait dengan Many to Many.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIS DATA - ERD</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="penjelasan-container">
+        <!-- Home Button -->
+        <div class="home-button">
+            <a href="../index.html">⌂</a>
+        </div>
+
+                <!-- Navigation Buttons -->
+        <div class="maju-button" class="posisi-button">
+            <a href="/pertemuan2/erd.html">←</a>
+            <a href="relation.html">→</a>
+        </div>
+
+        <div class="penjelasan-card">
+            <!-- Title -->
+            <div style="background-color: rgb(0, 255, 174);" class="header-kejelasan">
+                <h1>Key</h1>
+            </div>
+
+            <!-- Content Area -->
+            <div class="penjelasan-content">
+                
+                <!-- Text Content -->
+                <div class="penjelasan-text">
+                    <h2>Apa itu Key dalam ERD?</h2>
+                    <p>Key dalam Entity Relationship Diagram (ERD) adalah atribut yang dipilih untuk mengidentifikasi entitas secara unik. Keunikan atribut key memungkinkan entitas tersebut dibedakan dari entitas lain dalam basis data.</p>
+                    <h2>Fungsi Key</h2>
+                    <p>Key dalam ERD berfungsi untuk memberikan identifikasi pada setiap baris data dalam sebuah tabel dan sebagai penghubung antara satu tabel dan juga dengan tabel lainnya. Key juga sangat penting sebagai tanda pengenal dan penghubung antar tabel dalam suatu relational database. Key dapat dipahami sebagai ‘tanda pengenal’ untuk mengidentifikasi sebuah baris di dalam tabel. Key juga berperan penting sebagai penghubung antara satu tabel dan juga dengan tabel lainnya. Key dalam database juga berfungsi untuk menjalankan fungsi sebagai ‘tanda pengenal’ dan sebagai penghubung antar tabel.</p>
+                    <h2>Primary Key</h2>
+                    <p>Primary key adalah suatu nilai yang ada didalam suatu basis data yang dimana digunakan untuk mengidentifikasi suatu baris yang ada di dalam tabel. Nilai yang ada didalam primary key adalah unik. Sedangkan secara sederhananya primary key dapat juga diartikan sebagai kolom yang berisi nilai unik, yang dimana memiliki fungsi sebagai identitas yang untuk membedakan setiap record yang ada didalam suatu tabel.</p>
+                    <p>Primary key juga dapat diartikan sebagai atribut atau kumpulan atribut yang dapat mengidentifikasi setiap baris data dalam sebuah relasi secara unik. Primary key juga dikenal sebagai kunci utama karena merupakan kunci yang paling penting dalam sebuah tabel. Primary key berfungsi sebagai tanda pengenal dan penghubung antar tabel dalam suatu relational database.</p>
+                        <div class="list-penjelasan-text">
+                            <h3>karakteristik dari primary key adalah:</h3>
+                            <ul class="margin-left">
+                                <li>Unik: Setiap nilai dalam primary key harus unik, tidak boleh ada duplikasi.</li>
+                                <li>Tidak Null: Primary key tidak boleh memiliki nilai null.</li>
+                            </ul>
+                            <p>Primary key juga dapat terdiri dari beberapa kolom, yang dikenal sebagai composite key.</p> 
+                            <h3>Contoh Penerapan Primary Key</h3>
+                            <ol class="margin-left">
+                                <li>Tabel Mahasiswa</li>
+                                    <img class="tabel-contoh" src="../image/mahasiswa.png" alt="contoh primary key" align="center">
+                                    <p>Dalam tabel mahasiswa, NIM (Nomor Induk Mahasiswa) dapat dijadikan sebagai primary key karena setiap mahasiswa memiliki NIM yang unik.</p>
+                                <li>Tabel Anggota</li>
+                                    <img class="tabel-contoh" src="../image/anggota.png" alt="contoh primary key" align="center">
+                                    <p>Dalam tabel anggota, id_anggota dapat dijadikan sebagai primary key karena setiap anggota memiliki ID yang unik.</p>
+                                <li>Tabel Karyawan</li>
+                                    <img class="tabel-contoh" src="../image/karyawan.png" alt="contoh primary key" align="center">
+                                    <p>Dalam tabel karyawan, id_karyawan dapat dijadikan sebagai primary key karena setiap karyawan memiliki ID yang unik.</p>
+                                <li>Tabel Pelanggan</li>
+                                    <img class="tabel-contoh" src="../image/pelanggan.png" alt="contoh primary key" align="center">
+                                    <p>Dalam tabel pelanggan, id_pelanggan dapat dijadikan sebagai primary key karena setiap pelanggan memiliki ID yang unik.</p>
+                                <li>Tabel Pasien</li>
+                                    <img class="tabel-contoh" src="../image/pasien.png" alt="contoh primary key" align="center">
+                                    <p>Dalam tabel Pasien, no_pasien dapat dijadikan sebagai primary key karena setiap pasien memiliki ID yang unik.</p>
+                            </ol>
+                        </div>
+                </div>
+                <div class="penjelasan-text">
+                    <h2>Foreign Key</h2>
+                    <p>Foreign Key adalah atribut atau kumpulan atribut yang digunakan untuk menghubungkan antara tabel master dengan tabel turunannya. Foreign Key digunakan untuk menciptakan hubungan antara dua tabel dalam database relasional. Foreign Key juga dikenal sebagai kunci tamu karena merupakan kunci yang terdapat pada tabel kedua atau child. Foreign Key merujuk pada suatu kolom yang unik untuk menghubungkan antar tabel. Foreign Key biasanya merujuk pada Primary Key di tabel lain, sehingga dapat memastikan integritas referensial antara tabel-tabel tersebut.</p>
+                    <div class="list-penjelasan-text">
+                        <h3>Fungsi Foreign Key</h3>
+                            <p>Foreign Key berfungsi sebagai penghubung antar tabel dalam suatu relational database. Foreign Key juga dapat digunakan untuk mengatur hubungan antar tabel, seperti one-to-one, one-to-many, dan many-to-many.</p>
+                        <h3>karakteristik dari foreign key adalah:</h3>
+                            <ul class="margin-left">
+                                <li>Referensial: Foreign key merujuk pada primary key di tabel lain.</li>
+                                <li>Nilai Null: Foreign key dapat memiliki nilai null jika tidak ada hubungan yang sesuai di tabel referensi.</li>
+                            </ul>
+                        <h3>Contoh Penerapan Foreign Key</h3>
+                            <ol class="margin-left">
+                                <li>Tabel Prodi dan Tabel Mahasiswa</li>
+                                    <img class="tabel-contoh" src="../image/prodi.png" alt="contoh foreign key" align="center">
+                                    <p>Dalam tabel mahasiswa, kode_prodi dapat dijadikan sebagai foreign key yang merujuk pada primary key kode_prodi di tabel prodi. Hal ini menunjukkan bahwa setiap mahasiswa terdaftar dalam sebuah program studi tertentu.</p>
+                                <li>Tabel Karyawan dan Tabel Perusahaan</li>
+                                    <img class="tabel-contoh" src="../image/perusahaan.png" alt="contoh foreign key" align="center">
+                                    <p>Dalam tabel karyawan, perusahaan_kode_perusahaan dapat dijadikan sebagai foreign key yang merujuk pada primary key kode_perusahaan di tabel perusahaan. Hal ini menunjukkan bahwa setiap karyawan bekerja di sebuah perusahaan tertentu.</p>
+                                <li>Tabel Pelanggan dan Tabel Transaksi</li>
+                                    <img class="tabel-contoh" src="../image/transaksi.png" alt="contoh foreign key" align="center">
+                                    <p>Dalam tabel transaksi, id_pelanggan dapat dijadikan sebagai foreign key yang merujuk pada primary key id_pelanggan di tabel pelanggan. Hal ini menunjukkan bahwa setiap transaksi dilakukan oleh seorang pelanggan tertentu.</p>
+                                <li>Tabel Buku, Tabel Peminjaman dan Tabel Anggota</li>
+                                    <img class="tabel-contoh" src="../image/perpustakaan.png" alt="contoh foreign key" align="center">
+                                    <p>Dalam tabel peminjaman, Buku_ISBN dapat dijadikan sebagai foreign key yang merujuk pada primary key ISBN di tabel buku, dan id_anggota dapat dijadikan sebagai foreign key yang merujuk pada primary key id_anggota di tabel anggota. Hal ini menunjukkan bahwa setiap peminjaman dilakukan oleh seorang anggota tertentu dan melibatkan sebuah buku tertentu.</p>
+                                <li>Tabel Pasien dan Tabel Dokter</li>
+                                    <img class="tabel-contoh" src="../image/dokter.png" alt="contoh foreign key" align="center">
+                                    <p>Dalam tabel pasien, id_dokter dapat dijadikan sebagai foreign key yang merujuk pada primary key id_dokter di tabel dokter. Hal ini menunjukkan bahwa setiap pasien ditangani oleh seorang dokter tertentu.</p>
+                            </ol>
+                    </div>
+                </div>
+                <div class="penjelasan-text">
+                    <h2>Candidate Key</h2>
+                    <p>Candidate Key adalah kumpulan atribut yang dapat membedakan setiap baris data dalam sebuah relasi secara unik. Candidate Key juga dikenal sebagai kunci calon karena merupakan kunci yang memenuhi syarat untuk menjadi Primary Key. Candidate Key berfungsi sebagai tanda pengenal dan penghubung antar tabel dalam suatu relational database. Candidate Key dapat terdiri dari satu atau lebih atribut yang dapat mengidentifikasi setiap baris data dalam sebuah tabel secara unik.</p>
+                    <div class="list-penjelasan-text">
+                        <h3>karakteristik dari candidate key adalah:</h3>
+                            <ul class="margin-left">
+                                <li>Unik: Setiap nilai dalam candidate key harus unik, tidak boleh ada duplikasi.</li>
+                                <li>Tidak Null: Candidate key tidak boleh memiliki nilai null.</li>
+                            </ul>
+                        <h3>Contoh Penerapan Candidate Key</h3>
+                            <ol class="margin-left">
+                                <li>Tabel Mahasiswa</li>
+                                    <img class="tabel-contoh" src="../image/mahasiswa.png" alt="contoh candidate key" align="center">
+                                    <p>Dalam tabel mahasiswa, NIM (Nomor Induk Mahasiswa) dan email dapat dijadikan sebagai candidate key karena setiap mahasiswa memiliki NIM dan email yang unik.</p>
+                                <li>Tabel Karyawan</li>
+                                    <img class="tabel-contoh" src="../image/karyawan.png" alt="contoh candidate key" align="center">
+                                    <p>Dalam tabel karyawan, id_karyawan dan email dapat dijadikan sebagai candidate key karena setiap karyawan memiliki ID dan email yang unik.</p>
+                                <li>Tabel Pelanggan</li>
+                                    <img class="tabel-contoh" src="../image/pelanggan.png" alt="contoh candidate key" align="center">
+                                    <p>Dalam tabel pelanggan, id_pelanggan dan email dapat dijadikan sebagai candidate key karena setiap pelanggan memiliki ID dan email yang unik.</p>
+                                <li>Tabel Pasien</li>
+                                    <img class="tabel-contoh" src="../image/pasien.png" alt="contoh candidate key" align="center">
+                                    <p>Dalam tabel pasien, no_pasien dan NIK dapat dijadikan sebagai candidate key karena setiap pasien memiliki ID dan NIK yang unik.</p>
+                                <li>Tabel Anggota</li>
+                                    <img class="tabel-contoh" src="../image/anggota.png" alt="contoh candidate key" align="center">
+                                    <p>Dalam tabel anggota, id_anggota dan no_ktp dapat dijadikan sebagai candidate key karena setiap anggota memiliki ID dan no_ktp yang unik.</p>
+                            </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
