@@ -150,7 +150,7 @@ body {
 }
 
 .content-overlay p {
-    font-size: 14px;
+    font-size: 14px !important;
     opacity: 0.9;
 }
 
